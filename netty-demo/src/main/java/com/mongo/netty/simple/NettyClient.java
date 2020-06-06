@@ -9,6 +9,12 @@ import io.netty.channel.socket.SocketChannel;
 import io.netty.channel.socket.nio.NioSocketChannel;
 
 /**
+ *  介绍：
+ *  netty 的入门案例，通过客户端和服务端两个程序之间的消息互动，探究 netty 的主从模型
+ *  客户端发送：hello，服务端！
+ *  服务端回复：hello，客户端！
+ *  并通过自定义的 handler 完成服务端和客户端的业务逻辑
+ *
  * @author hzuwei
  * @version 1.0
  * @date 2020/6/6 17:42
