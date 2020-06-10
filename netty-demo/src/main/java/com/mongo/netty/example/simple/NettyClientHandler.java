@@ -1,12 +1,10 @@
-package com.mongo.netty.simple;
+package com.mongo.netty.example.simple;
 
 import io.netty.buffer.ByteBuf;
 import io.netty.buffer.Unpooled;
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.ChannelInboundHandlerAdapter;
 import io.netty.util.CharsetUtil;
-
-import java.nio.Buffer;
 
 /**
  * @author hzuwei

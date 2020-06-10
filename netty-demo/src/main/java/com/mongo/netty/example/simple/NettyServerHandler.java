@@ -1,4 +1,4 @@
-package com.mongo.netty.simple;
+package com.mongo.netty.example.simple;
 
 import io.netty.buffer.ByteBuf;
 import io.netty.buffer.Unpooled;
