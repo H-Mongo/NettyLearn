@@ -28,14 +28,14 @@ public class NettyByteBuf01 {
         }
         System.out.println("byteBuf 的容量 capacity=" + byteBuf.capacity());
         // 输出数据，方式一
-        for (int i = 0; i < byteBuf.capacity(); ++i){
-            // getByte(i) 的使用不会导致 readerIndex 的变化
-            System.out.println(byteBuf.getByte(i));
-        }
+//        for (int i = 0; i < byteBuf.capacity(); ++i){
+//            // getByte(i) 的使用不会导致 readerIndex 的变化
+//            System.out.println(byteBuf.getByte(i));
+//        }
         // 输出数据，方式二
         for (int i = 0; i < byteBuf.capacity(); ++i){
-            // readerIndex() 的使用会导致 readerIndex 的变化，可读取的数据范围最大为 writerIndex ，而不是 capacity
-            System.out.println(byteBuf.readerIndex());
+            // readByte() 的使用会导致 readerIndex 的变化，可读取的数据范围最大为 writerIndex ，而不是 capacity
+            System.out.println(byteBuf.readByte());
         }
 
 
